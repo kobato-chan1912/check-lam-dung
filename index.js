@@ -51,7 +51,12 @@ async function checkUser(account, config) {
     const { code, message } = response.data;
     console.log(`[${config.name}] ${account} → ${message}`);
 
-    if (message.includes("không đủ điều kiện nhận thưởng")) {
+    if (message.includes("không đủ điều kiện nhận thưởng") || 
+    message.includes("không hợp lệ") || 
+    message.includes("không tồn tại") || 
+    message.includes("chưa liên kết")
+  
+  ) {
 
       return false;
 
