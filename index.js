@@ -54,7 +54,7 @@ async function checkUser(account, config) {
     if (message.includes("không đủ điều kiện nhận thưởng") || 
     message.includes("không hợp lệ") || 
     message.includes("không tồn tại") || 
-    message.includes("chưa liên kết")
+    message.includes("ngân hàng")
   
   ) {
 
